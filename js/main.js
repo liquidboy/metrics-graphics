@@ -941,7 +941,7 @@ $(document).ready(function() {
             $('.pill').removeClass('active');
             $(this).toggleClass('active');
             $('#dark').attr({href : 'css/metricsgraphics-dark.css'});
-            $('#dark-layout').attr({href : 'css/metricsgraphics-dark-layout.css'});
+            $('#dark_layout').attr({href : 'css/metricsgraphics-dark-layout.css'});
 
             //add this scatterplot and color the groups based on the theme
             addScatterplotSizeAndColor('dark');
@@ -962,7 +962,7 @@ $(document).ready(function() {
             $('.pill').removeClass('active');
             $(this).toggleClass('active');
             $('#dark').attr({href : ''});
-            $('#dark-layout').attr({href : ''});
+            $('#dark_layout').attr({href : ''});
 
             //add this scatterplot and color the groups based on the theme
             addScatterplotSizeAndColor('light');

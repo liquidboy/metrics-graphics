@@ -1,5 +1,8 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true"  %>
+<!DOCTYPE html>
+
 <html lang='en'>
-<head>
+<head runat="server">
     <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
     <meta property='og:title' content='MetricsGraphics.js' />
     <meta property='og:description' content='MetricsGraphics.js is a library optimized 
@@ -29,8 +32,10 @@
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.4.11/d3.min.js' charset='utf-8'></script>
     <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'></script>
-    <script src='js/metricsgraphics.min.js'></script>
+    
+    <script src="<%=System.Web.Optimization.Scripts.Url("~/metricsgraphics")%>"></script>
     <script src='js/main.js'></script>
+
 
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -345,3 +350,4 @@
     </div>
 </body>
 </html>
+
