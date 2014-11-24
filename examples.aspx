@@ -33,6 +33,7 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.4.11/d3.min.js' charset='utf-8'></script>
     <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'></script>
     
+    <%--<script src="<%=System.Web.Optimization.Scripts.Url("~/metricsgraphics")%>"></script>--%>
     <script src="<%=System.Web.Optimization.Scripts.Url("~/metricsgraphics")%>"></script>
     <script src='js/main.js'></script>
 
