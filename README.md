@@ -27,6 +27,11 @@ Though originally envisioned for Mozilla Metrics dashboard projects, we are maki
 1. Download the latest release from [here](https://github.com/mozilla/metrics-graphics/releases).
 2. Follow the examples in [index.htm](https://github.com/mozilla/metrics-graphics/blob/master/index.htm) and [main.js](https://github.com/mozilla/metrics-graphics/blob/master/js/main.js) to see how graphics are laid out and built. The examples use json data from [/data](https://github.com/mozilla/metrics-graphics/blob/master/data), though you may easily pull data from elsewhere.
 
+## Visual Studio 2015
+1. Solution found in the \Build\ folder .. (metrics-graphics.sln)
+2. To run make sure you use a "LOCAL-IIS" as it needs data via json. You will encounter cross domain issues  if you try to use "IIS Express".
+
+
 ## Dependencies
 The library depends on [D3](http://d3js.org) for binding data to DOM elements, [Bootstrap](http://getbootstrap.com/) to facilitate layout and [jQuery](http://jquery.com/), which we're currently using to facilitate DOM manipulations.
 
@@ -54,15 +59,15 @@ _Note: The js file will be regenerated between releases any time we add a new ch
 The download package includes everything that you see on [metricsgraphicsjs.org](http://metricsgraphicsjs.org). In order to use the library in your own project, the only files that you'll need are:
 
 1. js
- * metricsgraphics.min.js
+* metricsgraphics.min.js
 2. css
- * metricsgraphics.css
- * metricsgraphics-layout.css
-  * metricsgraphics-dark.css
-  * metricsgraphics-dark-layout.css
+* metricsgraphics.css
+* metricsgraphics-layout.css
+* metricsgraphics-dark.css
+* metricsgraphics-dark-layout.css
 3. images
-  * missing-data.png
-  * missing-data-dark.png
+* missing-data.png
+* missing-data-dark.png
 
 Remember to include the calls to the third-party libraries, as they appear in the code for the examples pages.
 
