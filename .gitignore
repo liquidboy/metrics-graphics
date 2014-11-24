@@ -4,3 +4,8 @@ node_modules
 other/divider.psd
 
 other/htaccess.txt
+obj/*
+build/metrics-graphics.sln.ide/*
+bin/*
+build/*.suo
+*.csproj.user
