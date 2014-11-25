@@ -30,7 +30,7 @@ Though originally envisioned for Mozilla Metrics dashboard projects, we are maki
 ## Visual Studio 2015
 1. Solution found in the \Build\ folder .. (metrics-graphics.sln)
 2. To run make sure you use a "LOCAL-IIS" as it needs data via json. You will encounter cross domain issues  if you try to use "IIS Express".
-
+[note: because you are using a LOCAL IIS you need to run VS2015 as Administrator]
 
 ## Dependencies
 The library depends on [D3](http://d3js.org) for binding data to DOM elements, [Bootstrap](http://getbootstrap.com/) to facilitate layout and [jQuery](http://jquery.com/), which we're currently using to facilitate DOM manipulations.
