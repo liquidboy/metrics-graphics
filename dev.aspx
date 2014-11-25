@@ -1,8 +1,6 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true"  %>
-<!DOCTYPE html>
-
+<%@ Page Language="C#" AutoEventWireup="true"  %>
 <html lang='en'>
-<head runat="server">
+<head>
     <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
     <meta property='og:title' content='MetricsGraphics.js' />
     <meta property='og:description' content='MetricsGraphics.js is a library optimized 
@@ -13,9 +11,9 @@
     <meta property='og:url' content='http://metricsgraphicsjs.org/' />
     <meta property='og:site_name' content='MetricsGraphics.js' />
 
-    <link href='images/og-logo.png' rel='icon' type='image/png' />
+    <link rel='icon' type='image/png' href='images/og-logo.png' />
 
-    <title>MetricsGraphics.js</title>
+    <title>MetricsGraphics.js (DEV)</title>
 
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
@@ -31,11 +29,14 @@
 
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.4.11/d3.min.js' charset='utf-8'></script>
-    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'></script>
 
+
+    <!-- dev start -->
     <script src="<%=System.Web.Optimization.Scripts.Url("~/metricsgraphics")%>"></script>
-    <script src='js/main.js'></script>
+    <!-- dev end -->
 
+
+    <script src='js/main.js'></script>
 
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -60,8 +61,8 @@
                 <li class='divider'>|</li>
                 <li><a href='#' id='light-css' class='pill active'>Light style</a></li>
                 <li><a href='#' id='dark-css' class='pill'>Dark style</a></li>
-                <li class='float-right no-padding'><a class='examples-options' href='dev.aspx'>DEV</a></li>
-                <li class='float-right'><a class='selected examples-options' href='examples.aspx'>RELEASE</a></li>
+                <li class='float-right no-padding'><a class='selected examples-options' href='dev.aspx'>DEV</a></li>
+                <li class='float-right'><a class='examples-options' href='examples.aspx'>RELEASE</a></li>
             </ul>
 
             <img src='images/logo.svg' id='logo' class='svg' />
@@ -325,6 +326,19 @@
             </div>
             <div class='row trunk-section'>
                 <div class='col-lg-4'>
+                    <h2 class='trunk-title'>Data-Based Button Layouts</h2>
+                    <p>
+                        It can be very useful to have buttons easily made out of a data set for easy segmenting &amp; selecting.
+                    </p>
+                </div>
+                <div class='col-lg-8'>
+                    <div class='row'>
+                        <div class='col-lg-12 text-center' id='buttons'></div>
+                    </div>
+                </div>
+            </div>
+            <div class='row trunk-section'>
+                <div class='col-lg-4'>
                     <h2 class='trunk-title'>Barplots</h2>
                     <p>Two examples of barplots. These are still works-in-progress.
                     </p>
@@ -350,4 +364,3 @@
     </div>
 </body>
 </html>
-

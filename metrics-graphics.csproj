@@ -98,6 +98,7 @@
     <Content Include="data\ufo_dates.csv" />
     <Content Include="data\xnotdate.json" />
     <Content Include="bower.json" />
+    <Content Include="dev.aspx" />
     <Content Include="examples.aspx" />
     <Content Include="Global.asax" />
     <Content Include="LICENSE" />
